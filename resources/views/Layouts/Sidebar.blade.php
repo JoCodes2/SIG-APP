@@ -31,6 +31,20 @@
                     </a>
                 </li>
 
+                <li class="menu-item {{ request()->is('member') ? 'active' : '' }}">
+                    <a href="/member" class="menu-link">
+                        <i class="menu-icon fa-solid fa-user"></i>
+                        <div data-i18n="Analytics">Member</div>
+                    </a>
+                </li>
+
+                <li class="menu-item {{ request()->is('timetable') ? 'active' : '' }}">
+                    <a href="/timetable" class="menu-link">
+                        <i class="menu-icon fa-solid fa-calendar-days"></i>
+                        <div data-i18n="Analytics">Jadwal</div>
+                    </a>
+                </li>
+
 
             </ul>
         </aside>
