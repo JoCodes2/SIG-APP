@@ -31,6 +31,13 @@
                     </a>
                 </li>
 
+                <li class="menu-item {{ request()->is('member') ? 'active' : '' }}">
+                    <a href="/member" class="menu-link">
+                        <i class="menu-icon fa-solid fa-user"></i>
+                        <div data-i18n="Analytics">Member</div>
+                    </a>
+                </li>
+
 
             </ul>
         </aside>
