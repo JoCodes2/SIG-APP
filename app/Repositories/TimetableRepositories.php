@@ -43,6 +43,7 @@ class TimetableRepositories implements TimetableInterfaces
             $data->day = $request->input('day');
             $data->start_time = $request->input('start_time');
             $data->end_time = $request->input('end_time');
+            
 
             $data->save();
 
