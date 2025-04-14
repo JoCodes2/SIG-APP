@@ -45,6 +45,27 @@
                     </a>
                 </li>
 
+                <li class="menu-item {{ request()->is('galeri') ? 'active' : '' }}">
+                    <a href="/galeri" class="menu-link">
+                        <i class="menu-icon fa-solid fa-photo-film"></i>
+                        <div data-i18n="Analytics">Galeri</div>
+                    </a>
+                </li>
+
+                <li class="menu-item {{ request()->is('news') ? 'active' : '' }}">
+                    <a href="/news" class="menu-link">
+                        <i class="menu-icon fa-solid fa-book"></i>
+                        <div data-i18n="Analytics">Berita</div>
+                    </a>
+                </li>
+
+                <li class="menu-item {{ request()->is('link') ? 'active' : '' }}">
+                    <a href="/link" class="menu-link">
+                        <i class="menu-icon fa-solid fa-image"></i>
+                        <div data-i18n="Analytics">Media</div>
+                    </a>
+                </li>
+
 
             </ul>
         </aside>
