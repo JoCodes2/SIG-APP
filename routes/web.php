@@ -25,6 +25,7 @@ Route::prefix('v1')->group(function () {
         Route::get('/get/{id}', 'getDataById');
         Route::post('/update/{id}', 'updateDataById');
         Route::delete('/delete/{id}', 'deleteDataById');
+        Route::get('/get-total-members', 'getTotalAnggota');
     });
 
     // route  api  //

@@ -104,6 +104,7 @@
                                         <option value="youth">Pemuda</option>
                                         <option value="pastor">Pendeta</option>
                                         <option value="administrator">Pengurus</option>
+                                        <option value="member">Anggota</option>
                                     </select>
                                     <small id="status_member-error" class="text-danger"></small>
                                 </div>
@@ -148,7 +149,7 @@
                             else if (item.status_member === "pastor") statusMember = "Pendeta";
                             else if (item.status_member === "administrator") statusMember =
                                 "Pengurus";
-                            else statusMember = item.status_member;
+                            else statusMember = "Anggota";
 
                             tableBody += "<tr>";
                             tableBody += "<td>" + (index + 1) + "</td>";

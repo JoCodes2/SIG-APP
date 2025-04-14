@@ -34,4 +34,8 @@ class MemberController
     {
         return $this->MemberRepo->deleteDataById($id);
     }
+    public function getTotalAnggota()
+    {
+        return $this->MemberRepo->getTotalAnggota();
+    }
 }

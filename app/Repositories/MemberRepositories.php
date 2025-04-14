@@ -103,4 +103,21 @@ class MemberRepositories implements MemberInterfaces
             return $this->error($th->getMessage(), 400, $th, class_basename($this), __FUNCTION__);
         }
     }
+
+    public function getTotalAnggota()
+    {
+        // Total Anggota Pemuda, Pendeta, Pengurus
+        $totalPemuda = $this->MemberModel::where('status_member', 'youth')->count();
+        $totalPendeta = $this->MemberModel::where('status_member', 'pastor')->count();
+        $totalPengurus = $this->MemberModel::where('status_member', 'administrator')->count();
+        $totalJemaat = $this->MemberModel::count();
+
+        // Return sebagai response JSON
+        return response()->json([
+            'total_pemuda' => $totalPemuda,
+            'total_pendeta' => $totalPendeta,
+            'total_pengurus' => $totalPengurus,
+            'total_jemaat' => $totalJemaat
+        ]);
+    }
 }
