@@ -17,7 +17,7 @@ Route::get('/timetable', function () {
     return view('Admin.timetable');
 });
 
-Route::get('/galeri', function () {
+Route::get('/galerii', function () {
     return view('Admin.galeri');
 });
 

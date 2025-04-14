@@ -17,16 +17,14 @@
                         <tr>
                             <th>No</th>
                             <th>Judul</th>
-                            <th>Keterangan</th>
                             <th>Gambar</th>
-                            <th>Link</th>
                             <th>Tanggal Upload</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody id="tbody">
                         <tr>
-                            <td colspan="7" class="text-center">Memuat data...</td>
+                            <td colspan="5" class="text-center">Memuat data...</td>
                         </tr>
                     </tbody>
                 </table>
@@ -51,18 +49,6 @@
                             <label for="title" class="form-label">Judul</label>
                             <input type="text" id="title" name="title" class="form-control">
                             <small id="title-error" class="text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="description" class="form-label">Keterangan</label>
-                            <input type="text" id="description" name="description" class="form-control">
-                            <small id="description-error" class="text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="link" class="form-label">Link</label>
-                            <input type="text" id="link" name="link" class="form-control">
-                            <small id="link-error" class="text-danger"></small>
                         </div>
 
                         <div class="mb-3">
@@ -103,10 +89,8 @@
                             tableBody += "<tr>";
                             tableBody += "<td>" + (index + 1) + "</td>";
                             tableBody += "<td>" + item.title + "</td>";
-                            tableBody += "<td>" + item.description + "</td>";
                             tableBody += "<td><img src='/uploads/img-content/" + item.image +
                                 "' width='100' height='100' alt='tidak ada'></td>";
-                            tableBody += "<td>" + item.link + "</td>";
                             tableBody += "<td>" + item.date_upload + "</td>";
                             tableBody += "<td>";
                             tableBody +=
@@ -184,13 +168,11 @@
                         $('#upsertDataModal').modal('show');
                         $('#id').val(response.data.id);
                         $('#title').val(response.data.title);
-                        $('#description').val(response.data.description);
-                        $('#link').val(response.data.link);
                         $('#date_upload').val(response.data.date_upload);
                         if (response.data.image) {
                             $('#imagePreview').html(
                                 `<img src="/uploads/img-content/${response.data.image}" width="200" height="200" alt="content Image">`
-                                );
+                            );
                         } else {
                             $('#imagePreview').html('<p>Tidak ada gambar</p>');
                         }

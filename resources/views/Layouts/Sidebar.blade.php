@@ -45,8 +45,8 @@
                     </a>
                 </li>
 
-                <li class="menu-item {{ request()->is('galeri') ? 'active' : '' }}">
-                    <a href="/galeri" class="menu-link">
+                <li class="menu-item {{ request()->is('galerii') ? 'active' : '' }}">
+                    <a href="/galerii" class="menu-link">
                         <i class="menu-icon fa-solid fa-photo-film"></i>
                         <div data-i18n="Analytics">Galeri</div>
                     </a>

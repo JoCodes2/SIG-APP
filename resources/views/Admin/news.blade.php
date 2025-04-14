@@ -19,14 +19,13 @@
                             <th>Judul</th>
                             <th>Keterangan</th>
                             <th>Gambar</th>
-                            <th>Link</th>
                             <th>Tanggal Upload</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody id="tbody">
                         <tr>
-                            <td colspan="7" class="text-center">Memuat data...</td>
+                            <td colspan="6" class="text-center">Memuat data...</td>
                         </tr>
                     </tbody>
                 </table>
@@ -57,12 +56,6 @@
                             <label for="description" class="form-label">Keterangan</label>
                             <input type="text" id="description" name="description" class="form-control">
                             <small id="description-error" class="text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="link" class="form-label">Link</label>
-                            <input type="text" id="link" name="link" class="form-control">
-                            <small id="link-error" class="text-danger"></small>
                         </div>
 
                         <div class="mb-3">
@@ -106,7 +99,6 @@
                             tableBody += "<td>" + item.description + "</td>";
                             tableBody += "<td><img src='/uploads/img-content/" + item.image +
                                 "' width='100' height='100' alt='tidak ada'></td>";
-                            tableBody += "<td>" + item.link + "</td>";
                             tableBody += "<td>" + item.date_upload + "</td>";
                             tableBody += "<td>";
                             tableBody +=
@@ -185,7 +177,6 @@
                         $('#id').val(response.data.id);
                         $('#title').val(response.data.title);
                         $('#description').val(response.data.description);
-                        $('#link').val(response.data.link);
                         $('#date_upload').val(response.data.date_upload);
                         if (response.data.image) {
                             $('#imagePreview').html(
