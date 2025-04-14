@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CMS\ContentController;
 use App\Http\Controllers\CMS\MemberController;
 use App\Http\Controllers\CMS\TimetableController;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +17,17 @@ Route::get('/timetable', function () {
     return view('Admin.timetable');
 });
 
+Route::get('/galerii', function () {
+    return view('Admin.galeri');
+});
+
+Route::get('/news', function () {
+    return view('Admin.news');
+});
+
+Route::get('/link', function () {
+    return view('Admin.link');
+});
 Route::prefix('v1')->group(function () {
 
     // route  api  //
@@ -31,6 +43,14 @@ Route::prefix('v1')->group(function () {
     // route  api  //
     Route::prefix('timetable')->controller(TimetableController::class)->group(function () {
         Route::get('/', 'getAllData');
+        Route::post('/create', 'createData');
+        Route::get('/get/{id}', 'getDataById');
+        Route::post('/update/{id}', 'updateDataById');
+        Route::delete('/delete/{id}', 'deleteDataById');
+    });
+
+    Route::prefix('content')->controller(ContentController::class)->group(function () {
+        Route::get('/{category}', 'getAllData');
         Route::post('/create', 'createData');
         Route::get('/get/{id}', 'getDataById');
         Route::post('/update/{id}', 'updateDataById');
