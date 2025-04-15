@@ -15,7 +15,7 @@ class MemberModel extends Model
         'name',
         'date_birth',
         'place_birth',
-        'age',
+        'work',
         'address',
         'status',
         'status_member',
