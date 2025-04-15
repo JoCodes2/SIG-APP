@@ -2,9 +2,9 @@
 <nav class="bg-white shadow-md">
   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
     <!-- Logo -->
-    <div class="text-2xl font-bold text-blue-600 flex items-center">
+    <div class="text-2xl font-bold text-red-600 flex items-center">
       <img src="{{ asset('assets/assets/logogereja.jpeg') }}" alt="Logo Gereja" class="w-7 h-7 mr-2">
-      Gereja<span class="text-yellow-500">Info</span>
+      GSJA KALVARI<span class="text-yellow-500">PALU</span>
     </div>
 
     <!-- Hamburger Menu (Mobile) -->

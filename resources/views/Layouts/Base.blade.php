@@ -16,6 +16,8 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
+    <link rel="icon" type="image/jpeg" href="{{ asset('assets/assets/logogereja.jpeg') }}" />
+
     <title>sistem informasi gereja</title>
 
     <meta name="description" content="" />
