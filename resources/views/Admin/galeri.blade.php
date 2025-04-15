@@ -274,12 +274,16 @@
                 $('#id').val('');
                 $('#imagePreview').html('');
                 $('#upsertDataModal').modal('show');
+                $('.text-danger').text('');
+
             });
 
             $('#upsertDataModal').on('hidden.bs.modal', function() {
                 $('#upsertDataForm')[0].reset();
                 $('#id').val('');
                 $('#imagePreview').html('');
+                $('.text-danger').text('');
+
             });
         });
     </script>

@@ -336,12 +336,16 @@
                 $('#upsertDataForm')[0].reset(); // reset form
                 $('#id').val('');
                 $('#upsertDataModal').modal('show');
+                $('.text-danger').text('');
+
             });
 
             // Reset saat modal ditutup
             $('#upsertDataModal').on('hidden.bs.modal', function() {
                 $('#upsertDataForm')[0].reset();
                 $('#id').val('');
+                $('.text-danger').text('');
+
             });
 
         });

@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->date('date_birth');
             $table->string('place_birth');
-            $table->integer('age');
+            $table->string('work');
             $table->text('address');
             $table->enum('status', ['widow', 'singel', 'marry', 'widower']);
-            $table->enum('status_member', ['youth', 'pastor', 'administrator', 'member']);
+            $table->enum('status_member', ['youth', 'pastor', 'administrator', 'member', 'girl', 'man', 'child']);
             $table->timestamps();
         });
     }

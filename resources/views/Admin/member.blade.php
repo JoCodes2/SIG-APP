@@ -19,7 +19,7 @@
                             <th>Nama</th>
                             <th>Tanggal Lahir</th>
                             <th>Tempat Lahir</th>
-                            <th>Umur</th>
+                            <th>Pekerjaan</th>
                             <th>Alamat</th>
                             <th>Status</th>
                             <th>Status Keanggotaan</th>
@@ -69,10 +69,10 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="age" class="form-label">Umur</label>
-                                    <input type="number" id="age" name="age" class="form-control" min="0"
+                                    <label for="work" class="form-label">Pekerjaan</label>
+                                    <input type="text" id="work" name="work" class="form-control" min="0"
                                         max="120" step="1">
-                                    <small id="age-error" class="text-danger"></small>
+                                    <small id="work-error" class="text-danger"></small>
                                 </div>
 
                             </div>
@@ -105,6 +105,9 @@
                                         <option value="pastor">Pendeta</option>
                                         <option value="administrator">Pengurus</option>
                                         <option value="member">Anggota</option>
+                                        <option value="girl">Kaum Wanita</option>
+                                        <option value="man">Kaum Pria</option>
+                                        <option value="child">Anak Sekolah Minggu</option>
                                     </select>
                                     <small id="status_member-error" class="text-danger"></small>
                                 </div>
@@ -147,6 +150,11 @@
                             let statusMember = "";
                             if (item.status_member === "youth") statusMember = "Pemuda";
                             else if (item.status_member === "pastor") statusMember = "Pendeta";
+                            else if (item.status_member === "girl") statusMember =
+                                "Kaum Wanita";
+                            else if (item.status_member === "man") statusMember = "Kaum Pria";
+                            else if (item.status_member === "child") statusMember =
+                                "Anak Sekolah Minggu";
                             else if (item.status_member === "administrator") statusMember =
                                 "Pengurus";
                             else statusMember = "Anggota";
@@ -156,7 +164,7 @@
                             tableBody += "<td>" + item.name + "</td>";
                             tableBody += "<td>" + item.date_birth + "</td>";
                             tableBody += "<td>" + item.place_birth + "</td>";
-                            tableBody += "<td>" + item.age + "</td>";
+                            tableBody += "<td>" + item.work + "</td>";
                             tableBody += "<td>" + item.address + "</td>";
                             tableBody += "<td>" + status + "</td>"; // <- sudah diubah
                             tableBody += "<td>" + statusMember + "</td>"; // <- sudah diubah
@@ -246,7 +254,7 @@
                         $('#name').val(response.data.name);
                         $('#date_birth').val(response.data.date_birth);
                         $('#place_birth').val(response.data.place_birth);
-                        $('#age').val(response.data.age);
+                        $('#work').val(response.data.work);
                         $('#address').val(response.data.address);
                         $('#status').val(response.data.status);
                         $('#status_member').val(response.data.status_member);
@@ -362,12 +370,14 @@
                 $('#upsertDataForm')[0].reset(); // reset form
                 $('#id').val('');
                 $('#upsertDataModal').modal('show');
+                $('.text-danger').text('');
             });
 
             // Reset saat modal ditutup
             $('#upsertDataModal').on('hidden.bs.modal', function() {
                 $('#upsertDataForm')[0].reset();
                 $('#id').val('');
+                $('.text-danger').text('');
             });
 
         });
