@@ -24,7 +24,9 @@
     </div>
 
     <!-- Statistik Jemaat -->
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   <div class="mt-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Baris Pertama (4 Item) -->
         <div class="bg-white shadow-md rounded-lg p-6 text-center">
             <i class="fas fa-users text-blue-500 text-3xl mb-4"></i>
             <h2 class="text-xl font-semibold">Total Jemaat</h2>
@@ -50,6 +52,30 @@
             <p class="text-gray-500">Aktif dalam pelayanan</p>
         </div>
     </div>
+
+    <!-- Baris Kedua (3 Item - center) -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6 justify-center">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <i class="fas fa-user-friends text-blue-500 text-3xl mb-4"></i>
+            <h2 class="text-xl font-semibold">Kaum Pria</h2>
+            <p class="text-blue-500 text-3xl font-bold" id="totalMan">0</p>
+            <p class="text-gray-500">Pelayan tangguh di samudra iman</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <i class="fas fa-user-friends text-blue-500 text-3xl mb-4"></i>
+            <h2 class="text-xl font-semibold">Kaum Wanita</h2>
+            <p class="text-blue-500 text-3xl font-bold" id="totalGirl">0</p>
+            <p class="text-gray-500">Pelita kasih di setiap pelayanan</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <i class="fas fa-user-friends text-blue-500 text-3xl mb-4"></i>
+            <h2 class="text-xl font-semibold">Anak Sekolah Minggu</h2>
+            <p class="text-blue-500 text-3xl font-bold" id="totalChild">0</p>
+            <p class="text-gray-500">Benih iman yang tumbuh di tepian harapan</p>
+        </div>
+    </div>
+</div>
+
 </div>
 @endsection
 
@@ -61,10 +87,15 @@
         method: 'GET',
         dataType: 'json',
         success: function (response) {
+            console.log(response);
+
             $('#totalPemuda').text(response.total_pemuda || 0);
             $('#totalPendeta').text(response.total_pendeta || 0);
             $('#totalPengurus').text(response.total_pengurus || 0);
             $('#totalJemaat').text(response.total_jemaat || 0);
+            $('#totalMan').text(response.total_pria || 0);
+            $('#totalGirl').text(response.total_wanita || 0);
+            $('#totalChild').text(response.total_child || 0);
         },
         error: function () {
             console.log("eror");
