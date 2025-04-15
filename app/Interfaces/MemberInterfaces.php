@@ -12,4 +12,5 @@ interface  MemberInterfaces
     public function getDataById($id);
     public function updateDataById(MemberRequest $request, $id);
     public function deleteDataById($id);
+    public function getTotalAnggota();
 }

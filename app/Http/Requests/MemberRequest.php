@@ -30,7 +30,7 @@ class MemberRequest extends FormRequest
             'age' => 'required|numeric',
             'address' => 'required',
             'status' => 'required|in:widow,singel,marry,widower',
-            'status_member' => 'required|in:youth,pastor,administrator',
+            'status_member' => 'required',
         ];
         return $rules;
     }
@@ -55,7 +55,6 @@ class MemberRequest extends FormRequest
             'status.in' => 'Status harus salah satu dari:janda,lajang,menikah,duda.',
 
             'status_member.required' => 'Status anggota wajib diisi.',
-            'status_member.in' => 'Status anggota harus salah satu dari: pemuda,pendeta,pengurus.',
         ];
     }
 
