@@ -2,7 +2,7 @@
   <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- About -->
     <div class="text-center">
-      <h2 class="text-white text-xl font-bold mb-4">Gereja<span class="text-yellow-500">Info</span></h2>
+      <h2 class="text-xl font-bold mb-4 text-red-500">GSJA KALVARI<span class="text-yellow-500">PALU</span></h2>
       <p class="mb-4">
         Sistem informasi gereja yang membantu Anda terhubung dengan komunitas gereja dan mendapatkan informasi terbaru.
       </p>
