@@ -21,38 +21,39 @@
  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        const urlLogout = 'auth/logout'
-        $(document).ready(function() {
-            $('#btnLogout').click(function(e) {
-                Swal.fire({
-                    title: 'Yakin ingin Logout?',
-                    icon: 'question',
-                    showCancelButton: true,
-                    confirmButtonText: 'Yes',
-                    cancelButtonText: 'Cancel',
-                    resolveButton: true
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        e.preventDefault();
-                        $.ajax({
-                            url: `{{ url('${urlLogout}') }}`,
-                            method: 'POST',
-                            dataType: 'json',
-                            headers: {
-                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                            },
-                            success: function(response) {
-                                console.log(response);
-                                window.location.href = '/login';
-                            },
-                            error: function(xhr, status, error) {
-                                alert('Error: Failed to logout. Please try again.');
-                            }
-                        });
-                    }
-                });
-            });
-        });
-    </script>
+
+
+ <script>
+     const urlLogout = 'auth/logout'
+     $(document).ready(function() {
+         $('#btnLogout').click(function(e) {
+             Swal.fire({
+                 title: 'Yakin ingin Logout?',
+                 icon: 'question',
+                 showCancelButton: true,
+                 confirmButtonText: 'Yes',
+                 cancelButtonText: 'Cancel'
+             }).then((result) => {
+                 if (result.isConfirmed) {
+                     e.preventDefault();
+                     $.ajax({
+                         url: `{{ url('v1/logout') }}`,
+                         method: 'POST',
+                         dataType: 'json',
+                         headers: {
+                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                         },
+                         success: function(response) {
+                             console.log(response);
+                             window.location.href = '/login';
+                         },
+                         error: function(xhr, status, error) {
+                             alert('Error: Gagal logout. Silakan coba lagi.');
+                         }
+                     });
+                 }
+             });
+
+         });
+     });
+ </script>

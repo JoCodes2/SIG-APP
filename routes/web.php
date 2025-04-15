@@ -1,33 +1,17 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CMS\ContentController;
 use App\Http\Controllers\CMS\MemberController;
 use App\Http\Controllers\CMS\TimetableController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', function () {
-    return view('Admin.dashboard');
-});
 
-Route::get('/member', function () {
-    return view('Admin.member');
-});
+Route::post('v1/login', [AuthController::class, 'login']);
+Route::get('/login', function () {
+    return view('Auth.Login');
+})->name('login')->middleware('guest');
 
-Route::get('/timetable', function () {
-    return view('Admin.timetable');
-});
-
-Route::get('/galerii', function () {
-    return view('Admin.galeri');
-});
-
-Route::get('/news', function () {
-    return view('Admin.news');
-});
-
-Route::get('/link', function () {
-    return view('Admin.link');
-});
 Route::prefix('v1')->group(function () {
 
     // route  api  //
@@ -57,6 +41,35 @@ Route::prefix('v1')->group(function () {
         Route::delete('/delete/{id}', 'deleteDataById');
     });
 });
+Route::middleware(['auth', 'web'])->group(function () {
+    Route::get('/home', function () {
+        return view('Admin.dashboard');
+    });
+
+    Route::get('/member', function () {
+        return view('Admin.member');
+    });
+
+    Route::get('/timetable', function () {
+        return view('Admin.timetable');
+    });
+
+    Route::get('/galerii', function () {
+        return view('Admin.galeri');
+    });
+
+    Route::get('/news', function () {
+        return view('Admin.news');
+    });
+
+    Route::get('/link', function () {
+        return view('Admin.link');
+    });
+
+
+    Route::post('v1/logout', [AuthController::class, 'logout']);
+});
+
 
 
 // ui web
