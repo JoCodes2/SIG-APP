@@ -11,7 +11,7 @@
     <div class="mt-10">
         <h2 class="text-2xl font-bold text-blue-600 mb-2">Profil Gereja</h2>
         <p class="text-gray-700 leading-relaxed">
-            Gereja Kasih Kristus merupakan tempat pertumbuhan rohani dan pelayanan yang berfokus pada pengajaran Firman Tuhan, persekutuan yang erat, dan pelayanan kasih kepada sesama. Kami terbuka untuk semua kalangan dan aktif menjangkau komunitas sekitar melalui berbagai kegiatan sosial dan pelayanan.
+        Gereja sidang jemaat Allah Kalvari Palu disingkat “GSJA KALVARI PALU”
         </p>
     </div>
 
@@ -19,7 +19,7 @@
     <div class="mt-6">
         <h2 class="text-2xl font-bold text-blue-600 mb-2">Sejarah Gereja</h2>
         <p class="text-gray-700 leading-relaxed">
-            Gereja ini berdiri sejak tahun 1985, berawal dari sebuah persekutuan kecil di rumah warga yang kemudian berkembang menjadi sebuah gereja dengan ratusan anggota jemaat. Selama bertahun-tahun, gereja ini telah mengalami pertumbuhan dalam hal jumlah jemaat, pelayanan, serta fasilitas, dan terus menjadi tempat bagi banyak orang untuk bertumbuh dalam iman Kristen.
+            Gereja Sidang Jemaat Allah Kalvari Palu dirintis pada Tahun 1970 oleh Pendeta Raurau yang berasal dari Beteleme, beliau adalah lulusan Sekolah Alkitab Minahasa yang sekarang dikenal STT Parakletos di Tomohon. Pada awal memulai Pelayanan belum ada jemaat yang bergabung, setelah bertemu teman lama bapak Ta'ungge Kolubo mereka memulai persekutuan, pelayanan pertama yang dilakukan adalah pelayanan sekolah minggu di rumah bapak Ta'ungge Kolubu yang terletak di jalan maesa, setelah itu pelayan terus dilakukan sampai ada beberapa jemaat yang ikut bergabung, kegiatan ibadah dilaksanakan di rumah salah satu jemaat pak Kairupan di jalan pemuda. Pada akhir 70an membeli tanah di jalan tanjung manimbaya dan di memulai pembangunan gedung gereja. Di tahun 1986 Sekolah Alkitab Maranata poso yang di buka oleh keluarga misionaris gsja bapak Darell Wood pindah ke kota palu dan melaksanan perkuliahan di gedung gereja dan pelayanan mulai berkembang. Pada awal di bangun nama gereja ini adalah GSJA jl tanjung manimbaya dan di resmikan oleh bapak gubernur H. Abdul Azis Lamadjido, SH Pada tanggal 1 juni 1990. Kemudian di tahun 1993 ibu gembala meninggal dan pada tahun 1996 bapak gembala bapak L Raurau meninggal. Dan pelayanan dilanjutkan oleh ibu pendeta Marcela Neti Malaha yang adalah wakil gembala dari Tahun 1992. Pada tahun 2000 pertama kali di adakan ulang tahun gereja maka gereja ini berubah nama menjadi GSJA KALVARI PALU, dan pelayanan terus berjalan sampai sekarang dengan total jemaat 200 lebih
         </p>
     </div>
 

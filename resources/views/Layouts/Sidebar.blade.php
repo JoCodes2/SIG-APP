@@ -2,7 +2,7 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
             <div class="app-brand demo">
-                <a href="index.html" class="app-brand-link">
+                <a href="/home" class="app-brand-link">
                     <span class="app-brand-logo demo">
                         <img src="{{ asset('assets/assets/logogereja.jpeg') }}" alt="Logo" class="img-fluid"
                             width="50" height="50">
@@ -24,8 +24,8 @@
             <div class="menu-inner-shadow"></div>
 
             <ul class="menu-inner py-1">
-                <li class="menu-item {{ request()->is('dashboard') ? 'active' : '' }}">
-                    <a href="/dashboard" class="menu-link">
+                <li class="menu-item {{ request()->is('home') ? 'active' : '' }}">
+                    <a href="/home" class="menu-link">
                         <i class="menu-icon fa-solid fa-house"></i>
                         <div data-i18n="Analytics">Dashboard</div>
                     </a>

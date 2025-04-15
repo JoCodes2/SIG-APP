@@ -5,10 +5,10 @@
     <!-- Text Section -->
     <div class="md:w-1/2 text-center md:text-left">
         <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Selamat Datang di <span class="text-blue-600">Gereja</span><span class="text-yellow-500">Info</span>
+            Selamat Datang di <span class="text-red-600">GSJA KALVARI</span><span class="text-red-500">PALU</span>
         </h1>
         <p class="text-gray-700 mb-6 text-lg">
-            GerejaInfo adalah sistem informasi digital gereja yang dirancang khusus untuk menyampaikan informasi penting kepada jemaat dengan mudah dan cepat.
+            Sistem informasi digital gereja yang dirancang khusus untuk menyampaikan informasi penting kepada jemaat dengan mudah dan cepat.
         </p>
 
         <div class="space-y-4 text-left">
