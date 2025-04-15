@@ -26,7 +26,7 @@ class TimetableRequest extends FormRequest
         $rules = [
             'title' => 'required',
             'description' => 'required',
-            'day' => 'required|in:sunday,monday,tuesday,thursday,friday,saturday',
+            'day' => 'required|in:sunday,monday,tuesday,wednesday,thursday,friday,saturday',
             'start_time' => 'required',
             'end_time' => 'required',
         ];

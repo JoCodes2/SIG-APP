@@ -66,6 +66,7 @@
                                     <option value="sunday">Minggu</option>
                                     <option value="monday">Senin</option>
                                     <option value="tuesday">Selasa</option>
+                                    <option value="wednesday">Rabu</option>
                                     <option value="thursday">Kamis</option>
                                     <option value="friday">Jumat</option>
                                     <option value="saturday">Sabtu</option>
