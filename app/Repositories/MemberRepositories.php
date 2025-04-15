@@ -41,7 +41,7 @@ class MemberRepositories implements MemberInterfaces
             $data->name = $request->input('name');
             $data->date_birth = $request->input('date_birth');
             $data->place_birth = $request->input('place_birth');
-            $data->age = $request->input('age');
+            $data->work = $request->input('work');
             $data->address = $request->input('address');
             $data->status = $request->input('status');
             $data->status_member = $request->input('status_member');
@@ -76,7 +76,7 @@ class MemberRepositories implements MemberInterfaces
             $data->name = $request->input('name');
             $data->date_birth = $request->input('date_birth');
             $data->place_birth = $request->input('place_birth');
-            $data->age = $request->input('age');
+            $data->work = $request->input('work');
             $data->address = $request->input('address');
             $data->status = $request->input('status');
             $data->status_member = $request->input('status_member');
@@ -110,6 +110,9 @@ class MemberRepositories implements MemberInterfaces
         $totalPemuda = $this->MemberModel::where('status_member', 'youth')->count();
         $totalPendeta = $this->MemberModel::where('status_member', 'pastor')->count();
         $totalPengurus = $this->MemberModel::where('status_member', 'administrator')->count();
+        $totalwanita = $this->MemberModel::where('status_member', 'girl')->count();
+        $totalpria = $this->MemberModel::where('status_member', 'man')->count();
+        $totalchild = $this->MemberModel::where('status_member', 'child')->count();
         $totalJemaat = $this->MemberModel::count();
 
         // Return sebagai response JSON
@@ -117,6 +120,9 @@ class MemberRepositories implements MemberInterfaces
             'total_pemuda' => $totalPemuda,
             'total_pendeta' => $totalPendeta,
             'total_pengurus' => $totalPengurus,
+            'total_wanita' => $totalwanita,
+            'total_pria' => $totalpria,
+            'total_child' => $totalchild,
             'total_jemaat' => $totalJemaat
         ]);
     }

@@ -27,9 +27,9 @@ class MemberRequest extends FormRequest
             'name' => 'required|max:50',
             'date_birth' => 'required|date_format:Y-m-d',
             'place_birth' => 'required',
-            'age' => 'required|numeric',
+            'work' => 'required',
             'address' => 'required',
-            'status' => 'required|in:widow,singel,marry,widower',
+            'status' => 'required',
             'status_member' => 'required',
         ];
         return $rules;
@@ -46,13 +46,11 @@ class MemberRequest extends FormRequest
 
             'place_birth.required' => 'Tempat lahir wajib diisi.',
 
-            'age.required' => 'Usia wajib diisi.',
-            'age.numeric' => 'Usia harus berupa angka.',
+            'work.required' => 'Pekerjaan wajib diisi.',
 
             'address.required' => 'Alamat wajib diisi.',
 
             'status.required' => 'Status wajib diisi.',
-            'status.in' => 'Status harus salah satu dari:janda,lajang,menikah,duda.',
 
             'status_member.required' => 'Status anggota wajib diisi.',
         ];
