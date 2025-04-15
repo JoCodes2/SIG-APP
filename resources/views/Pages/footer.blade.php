@@ -25,9 +25,9 @@
     <div class="text-center">
       <h3 class="text-white text-lg font-bold mb-4">Kontak Kami</h3>
       <ul>
-        <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Jl. Gereja No. 123, Kota Jakarta</li>
-        <li class="mb-2"><i class="fas fa-phone mr-2"></i>+62 123 4567 890</li>
-        <li class="mb-2"><i class="fas fa-envelope mr-2"></i>info@gereja-info.com</li>
+        <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Jln. Tanjung manimbaya No. 114, Palu</li>
+        <li class="mb-2"><i class="fas fa-phone mr-2"></i>+62 823-4611-6967</li>
+        <li class="mb-2"><i class="fas fa-envelope mr-2"></i>gsjakalvaripalu@gmail.com</li>
       </ul>
     </div>
   </div>
