@@ -1,87 +1,32 @@
 @extends('Layouts.Base')
 
 @section('content')
-    <div class="maintenance-container">
-        <div class="maintenance-content">
-            <h1>Maintenance Mode</h1>
-            <p>We're currently undergoing scheduled maintenance.</p>
-            <p>Please check back later.</p>
-            <div class="maintenance-icon">
-                <i class="fas fa-tools"></i>
+    <section class="home" id="home">
+        <div class="container pt-5 mt-5" data-aos="zoom-in">
+            <div class="row pt-2 justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                    <div class="bg-home ">
+                        <img src="{{ asset('assets/assets/home2.png') }}" class="img-fluid img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex flex-column justify-content-center align-items-start">
+                    <p class="text-hai font-popins">Hallo 👋
+                        <span class="sky px-2">
+                            @auth
+                                {{ auth()->user()->name }}
+                            @endauth
+                        </span>
+                    </p>
+                    <h1 class="title-home font-kanit sky">Selamat Datang di Sistem Informasi Gereja Kalvari Palu
+                    </h1>
+                    <p class="intro-junior font-popins ">
+                        Sistem informasi ini dibuat untuk wadah informasi mulai dari jadwal,dokumentasi hingga anggota
+                        jema'at
+                    </p>
+                </div>
             </div>
-            <div class="countdown">
-                <p>Estimated time remaining:</p>
-                <div id="timer" class="timer">00:30:00</div>
-            </div>
-        </div>
-    </div>
+    </section>
 @endsection
 
 @section('scripts')
-    <script>
-        // Countdown timer script
-        let timeLeft = 1800; // 30 minutes in seconds
-        const timerElement = document.getElementById('timer');
-
-        const countdown = setInterval(() => {
-            if (timeLeft <= 0) {
-                clearInterval(countdown);
-                timerElement.innerHTML = "We're back!";
-            } else {
-                const hours = Math.floor(timeLeft / 3600);
-                const minutes = Math.floor((timeLeft % 3600) / 60);
-                const seconds = timeLeft % 60;
-
-                timerElement.innerHTML =
-                    `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-                timeLeft--;
-            }
-        }, 1000);
-    </script>
 @endsection
-
-<style>
-    .maintenance-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f8f9fa;
-        text-align: center;
-        font-family: Arial, sans-serif;
-    }
-
-    .maintenance-content {
-        background: white;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-        font-size: 2.5em;
-        color: #333;
-    }
-
-    p {
-        font-size: 1.2em;
-        color: #666;
-    }
-
-    .maintenance-icon {
-        font-size: 5em;
-        color: #007bff;
-        margin: 20px 0;
-    }
-
-    .countdown {
-        margin-top: 20px;
-        font-size: 1.5em;
-        color: #333;
-    }
-
-    .timer {
-        font-weight: bold;
-        color: #e74c3c;
-    }
-</style>
