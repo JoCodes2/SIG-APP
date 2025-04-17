@@ -8,12 +8,46 @@
     </div>
 
     <!-- Deskripsi Profil Gereja -->
-    <div class="mt-10">
-        <h2 class="text-2xl font-bold text-blue-600 mb-2">Profil Gereja</h2>
-        <p class="text-gray-700 leading-relaxed">
-        Gereja sidang jemaat Allah Kalvari Palu disingkat “GSJA KALVARI PALU”
-        </p>
+    <div class="mt-10 space-y-6">
+         <h2 class="text-2xl font-bold text-blue-600 mb-2">Profile Gereja</h2>
+
+        <div class="text-gray-800 text-[17px] leading-relaxed space-y-1">
+            <p><span class="font-semibold text-blue-600">Nama Gereja:</span> Gereja Sidang Jemaat Allah Kalvari Palu (GSJA Kalvari Palu)</p>
+            <p><span class="font-semibold text-blue-600">Tahun Berdiri:</span> 1970</p>
+            <p><span class="font-semibold text-blue-600">Gembala:</span> Ibu Pdt. Marcela Neti Malaha, S.Th</p>
+            <p><span class="font-semibold text-blue-600">Alamat:</span> Jl. Tanjung Manimbaya No.114</p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold text-teal-700 mb-1">Visi Gereja</h3>
+            <p class="text-gray-700 italic border-l-4 border-teal-400 pl-4">
+                Membangun Jemaat yang <span class="font-semibold text-teal-600">BERINTEGRITAS</span> dan hidup dalam
+                <span class="font-semibold text-teal-600">KEKELUARGAAN</span> untuk mencapai
+                <span class="font-bold text-teal-800">1000 jiwa</span>.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold text-yellow-600 mb-1">Misi Gereja</h3>
+            <p class="text-gray-700 italic border-l-4 border-yellow-400 pl-4">
+                Memenangkan jiwa bagi Tuhan melalui
+                <span class="font-semibold text-yellow-600">KETELADANAN</span> hidup dan
+                <span class="font-semibold text-yellow-600">PEMBERITAAN INJIL</span> secara dinamis
+                dengan kekuatan <span class="font-bold text-yellow-700">Roh Kudus</span>.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold text-pink-600 mb-1">Core Value</h3>
+            <ul class="list-disc list-inside text-gray-800 font-medium ml-2">
+                <li><span class="text-pink-600">CINTA TUHAN</span></li>
+                <li><span class="text-pink-600">RENDAH HATI</span></li>
+                <li><span class="text-pink-600">JUJUR</span></li>
+                <li><span class="text-pink-600">RAJIN</span></li>
+            </ul>
+        </div>
     </div>
+
 
     <!-- Sejarah Gereja -->
     <div class="mt-6">

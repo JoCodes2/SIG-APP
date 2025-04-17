@@ -22,14 +22,27 @@
     </div>
 
     <!-- Contact -->
-    <div class="text-center">
-      <h3 class="text-white text-lg font-bold mb-4">Kontak Kami</h3>
-      <ul>
-        <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Jln. Tanjung manimbaya No. 114, Palu</li>
-        <li class="mb-2"><i class="fas fa-phone mr-2"></i>+62 823-4611-6967</li>
-        <li class="mb-2"><i class="fas fa-envelope mr-2"></i>gsjakalvaripalu@gmail.com</li>
-      </ul>
+   <div class="text-center">
+    <h3 class="text-white text-lg font-bold mb-4">Kontak Kami</h3>
+    <ul class="text-white">
+        <li class="mb-2">
+        <i class="fas fa-map-marker-alt mr-2"></i>Jln. Tanjung Manimbaya No. 114, Palu
+        </li>
+        <li class="mb-2">
+        <i class="fas fa-phone mr-2"></i>+62 823-4611-6967
+        </li>
+        <li class="mb-2">
+        <i class="fas fa-envelope mr-2"></i>gsjakalvaripalu@gmail.com
+        </li>
+        <li class="mb-2">
+        <i class="fab fa-facebook mr-2"></i><span class="font-medium">Gsja Kalvari Palu</span>
+        </li>
+        <li class="mb-2">
+        <i class="fab fa-instagram mr-2"></i><span class="font-medium">@gsjakalvaripalu</span>
+        </li>
+    </ul>
     </div>
+
   </div>
   <div class="text-center text-gray-500 mt-8">
     © 2025 GerejaInfo. Hak Cipta Dilindungi.
